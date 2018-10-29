@@ -1,0 +1,46 @@
+/*메뉴 카테고리 스타일*/
+.submenu_area ul li {
+    display: inline-block;
+    margin: 0 20px;
+    font-family: yetnalL;
+}
+
+.submenu_area {
+    width: 100%;
+    margin: 100px auto 10px;
+    text-align: center;
+}
+
+.submenu_area a {
+    text-decoration: none;
+    color: #b5b3b3;
+}
+
+/*반응형 스타일*/
+
+/*핸드폰 단말기*/
+/*여백, 글씨 조정*/
+@media (max-width:599px) {
+    .submenu_area ul li {
+        margin: 0 10px;
+    }
+
+    .submenu_area {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .submenu_area a {
+        font-size: 10px;
+    }
+}
+
+/*태블릿*/
+@media (min-width:600px) and (max-width: 768px) {
+    .submenu_area {
+        width: 100%;
+        margin: 150px auto 10px;
+    }
+}
+
+@media (min-width:799px) {}
