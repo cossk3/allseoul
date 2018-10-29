@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/intro.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/header_sub.css">
+    <link rel="stylesheet" href="./css/footer.css" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+        /*반응형 메뉴*/
+        $(function(){
+            var pull=$('#pull');
+            menu=$('nav ul');
+            menuHeight=menu.height();
+            
+            /*id pull메뉴 클릭할때마다 슬라이드 !!*/
+            $(pull).on('click', function(e){
+                e.preventDefault();
+                menu.slideToggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!--헤더 시작-->
+    <header>
+        <div class="topmenu">
+            <a href="login.html">로그인</a>&nbsp;&nbsp;|&nbsp;
+            <a href="signup.html">회원가입</a>
+        </div>
+        <div class="logo">
+            <a href="index.html"><img src="./img/logo.png" alt="ALL 서울"></a>
+        </div>
+
+        <nav class="nav_menu">
+            <ul class="nav_menu">
+                <li><a href="menu1.html">지역</a></li>
+                <li><a href="menu2.html">놀거리</a></li>
+                <li><a href="menu3.html">볼거리</a></li>
+                <li><a href="menu4.html">먹거리</a></li>
+                <li><a href="menu5.html">계절</a></li>
+                <li><a href="#">데이트코스</a></li>
+                <li><a href="menu7.html">고객지원</a></li>
+            </ul>
+            <a id="pull" href="#">Menu</a>
+        </nav>
+    </header>
+    <!--헤더 끝-->
+    
+    
+    <!--intro carousel 배너 시작-->
+    <div class="carousel">
+        <div class="carousel-inner">
+           <!--라디오 버튼(누르면 다른 이미지)-->
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+            <div class="carousel-item">
+                <img src="./img/intro/1.png">
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+                <img src="./img/intro/2.png">
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+                <img src="./img/intro/3.png">
+            </div>
+            <!--라디오버튼 이미지-->
+            <ol class="carousel-indicators">
+                <li>
+                    <label for="carousel-1" class="carousel-bullet">•</label>
+                </li>
+                <li>
+                    <label for="carousel-2" class="carousel-bullet">•</label>
+                </li>
+                <li>
+                    <label for="carousel-3" class="carousel-bullet">•</label>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <!--intro carousel 배너 끝-->
+    
+    
+    <!--intro information 시작-->
+    <div class="intro_info">
+        <div class="intro_con">
+            <div class="intro_row">
+                <img src="./img/people.png" alt="">
+                <div class="info_detail">
+                    <h1>가나다</h1><span>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세.</span>
+                </div>
+            </div>
+            <div class="intro_row">
+                <img src="./img/people.png" alt="">
+                <div class="info_detail">
+                    <h1>라마바</h1><span>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세.</span>
+                </div>
+            </div>
+            <div class="intro_row">
+                <img src="./img/people.png" alt="">
+                <div class="info_detail">
+                    <h1>사아자</h1><span>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--intro information 끝-->
+    
+    
+    <!--푸터시작-->
+    <footer>
+        <div class="footer">
+            <a href="intro.html">회사소개</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">인재채용</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">제휴제안</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">이용약관</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">개인정보처리방침</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="menu7.html">고객센터</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <p>Copyright(C) 2018 All Right Reserved.</p>
+        </div>
+    </footer>
+    <!--푸터 -->
+</body>
+
+</html>
