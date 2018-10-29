@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/listing.css">
+    <link rel="stylesheet" href="./css/pagination.css">
+    <link rel="stylesheet" href="./css/header_sub.css">
+    <link rel="stylesheet" href="./css/footer.css" type="text/css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+        /*반응형 메뉴*/
+        $(function() {
+            var pull = $('#pull');
+            menu = $('nav ul');
+            menuHeight = menu.height();
+
+            /*id pull메뉴 클릭할때마다 슬라이드 !!*/
+            $(pull).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <!--헤더 시작-->
+    <header>
+        <div class="topmenu">
+            <a href="login.html">로그인</a>&nbsp;&nbsp;|&nbsp;
+            <a href="signup.html">회원가입</a>
+        </div>
+        <div class="logo">
+            <a href="index.html"><img src="./img/logo.png" alt="ALL 서울"></a>
+        </div>
+
+        <nav class="nav_menu">
+            <ul class="nav_menu">
+                <li><a href="menu1.html">지역</a></li>
+                <li><a href="menu2.html">놀거리</a></li>
+                <li><a href="menu3.html">볼거리</a></li>
+                <li><a href="menu4.html">먹거리</a></li>
+                <li><a href="menu5.html">계절</a></li>
+                <li><a href="#">데이트코스</a></li>
+                <li><a href="menu7.html">고객지원</a></li>
+            </ul>
+            <a id="pull" href="#">Menu</a>
+        </nav>
+    </header>
+    <!--헤더 끝-->
+
+
+    <!--게시글 목록 시작-->
+    <section class="listings">
+        <div class="wrapper">
+            <ul class="properties_list">
+                <li>
+                    <a href="#">
+                        <img src="img/vr/property1.png" alt="" class="property_img">
+                        <span class="title">
+                            [홍대]HIT VR
+                        </span>
+                        <div class="property_details">
+                            <h1>
+                                상상을 뛰어넘는 현실!<br>스릴넘치는 어드벤쳐 속으로!
+                            </h1>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/vr/property2.png" alt="" class="property_img">
+                        <span class="title">
+                            [성신여대]영 VR
+                        </span>
+                        <div class="property_details">
+                            <h1>
+                                깔끔한 인테리어와 다양한 음료메뉴 완.비
+                            </h1>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/vr/property3.png" alt="" class="property_img">
+                        <span class="title">
+                            [건대]위 VR
+                        </span>
+                        <div class="property_details">
+                            <h1>
+                                친구/가족/커플 모두가 즐기는 핫한 VR카페
+                            </h1>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/vr/property4.png" alt="" class="property_img">
+                        <span class="title">
+                            [홍대]크립쇼VR펍
+                        </span>
+                        <div class="property_details">
+                            <h1>
+                                VR체험 & 맥주와 함께하는 홍대데이트
+                            </h1>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/vr/property5.png" alt="" class="property_img">
+                        <span class="title">
+                            [강남]더메이즈VR
+                        </span>
+                        <div class="property_details">
+                            <h1>
+                                It's Reality! 놀이의 신세계 신나는 VR게임
+                            </h1>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/vr/property6.png" alt="" class="property_img">
+                        <span class="title">
+                            [연신내]CSI VR<br>방탈출
+                        </span>
+                        <div class="property_details">
+                            <h1>
+                                CSI 본부와 교신하며 실시간 미션 클리어
+                            </h1>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/vr/property7.png" alt="" class="property_img">
+                        <span class="title">
+                            [대학로]EVR <br>그라운드
+                        </span>
+                        <div class="property_details">
+                            <h1>
+                                리얼보다 더 리얼한 게임 속 세계로!
+                            </h1>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/vr/property8.png" alt="" class="property_img">
+                        <span class="title">
+                            [신촌]브라이트<br>vr테마파크
+                        </span>
+                        <div class="property_details">
+                            <h1>
+                                현실을 뛰어넘는 눈부신 경험을 마주하다
+                            </h1>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/vr/property9.png" alt="" class="property_img">
+                        <span class="title">
+                            [동대문]판타 VR
+                        </span>
+                        <div class="property_details">
+                            <h1>
+                                온 가족이 함께 일상 속 쾌.감.충.전! 짜릿하게! 즐겁게!
+                            </h1>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--게시글 목록 끝-->
+
+
+    <!--pagination 시작-->
+    <div class="pagination">
+        <ul>
+            <li><a class="pagination__link" href="#">
+                    <</a> </li> <li><a class="pagination__link is_active" href="#"> 1 </a></li>
+            <li><a class="pagination__link" href="#">2</a></li>
+            <li><a class="pagination__link" href="#">3</a></li>
+            <li><a class="pagination__link" href="#">4</a></li>
+            <li><a class="pagination__link" href="#">5</a></li>
+            <li><a class="pagination__link" href="#">6</a></li>
+            <li><a class="pagination__link" href="#">></a></li>
+        </ul>
+    </div>
+    <script>
+        /*해당 페이지 번호를 클릭하면*/
+        /*클릭한 번호에 is_active 클래스 붙여줌*/
+        var link = $('.pagination__link');
+        link.on('click', function() {
+            link.removeClass('is_active');
+            $(this).addClass('is_active');
+        });
+
+    </script>
+    <!--pagination 끝-->
+    
+    
+    <!--푸터 시작-->
+    <footer>
+        <div class="footer">
+            <a href="intro.html">회사소개</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">인재채용</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">제휴제안</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">이용약관</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">개인정보처리방침</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="menu7.html">고객센터</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <p>Copyright(C) 2018 All Right Reserved.</p>
+        </div>
+    </footer>
+    <!--푸터 끝-->
+</body>
+
+</html>
