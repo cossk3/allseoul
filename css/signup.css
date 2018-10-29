@@ -1,0 +1,93 @@
+/*회원가입 폼 스타일*/
+.signupform {
+    width: 50%;
+    height: 750px;
+    margin: 200px auto 100px;
+    border: 1px solid #000;
+    padding: 10px 100px;
+    overflow: auto;
+    text-align: center;
+}
+.signup__row {
+    height: 3rem;
+    padding: 3rem 1rem 0;
+    list-style: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+/*input, 버튼 스타일*/
+input,
+button {
+    outline: none;
+    border: none;
+}
+.signupform ul li input {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+    background: transparent;
+    color: #000;
+}
+input::placeholder { /*input 안 글씨*/
+    color: #000;
+}
+.__submit {
+    position: relative;
+    width: 80%;
+    height: 4rem;
+    margin: 3rem 2.2rem 0.7rem;
+    border: 1px solid #000;
+    font-weight: bold;
+    background: #fff;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+/*아이콘 스타일*/
+.icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2.5rem;
+    overflow: visible;
+}
+
+/*이용약관 스타일*/
+.cont {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.cont input {
+    margin-top: 20px;
+}
+
+textarea {
+    font-size: 15px;
+    padding: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/*반응형 스타일*/
+
+/*핸드폰 단말기*/
+/*이용약관 크기 조정, 아이콘 없애기*/
+@media only screen and (max-width : 599px) {
+    .icon {
+        display: none;
+    }
+
+    textarea {
+        width: 500px;
+        height: 300px;
+        font-size: 10px;
+    }
+
+    input::placeholder {
+        font-size: 12px;
+    }
+}
