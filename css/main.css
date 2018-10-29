@@ -1,0 +1,44 @@
+/*배너스타일*/
+.video {
+    width: 100%;
+}
+.img { /*동영상배너div스타일*/
+    position: relative;
+    background-size: cover;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.img .content { /*동영상 위 글씨 스타일*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    z-index: 1;
+    text-align: center;
+    font-family: yetnalB;
+}
+
+/*반응형 스타일*/
+
+/*핸드폰 단말기*/
+/*동영상 배너 크기조정 및 글씨 조정*/
+@media (max-width: 599px) {
+    .img {
+        margin-top: 10px;
+    }
+    .img .content {
+        font-size: 10px;
+    }
+}
+/*태블릿*/
+@media (min-width:600px) and (max-width:768px) {
+    .img {
+        margin-top: 30px;
+    }
+    .img .content {
+        font-size: 20px;
+    }
+}
