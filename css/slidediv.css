@@ -1,0 +1,268 @@
+.thumbnail .more {
+    display: block;
+    z-index: 4;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    margin: 0 auto;
+    margin-left: -41px;
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 70px;
+    text-align: center;
+}
+.thumbnail img {
+    width: 100%;
+    height: 230px;
+    margin-right: 1px;
+    margin-left: 1px;
+}
+.thumbnail .more img {
+    width: 80px!important;
+    height: 80px!important;
+}
+.thumbnail:hover .more {
+    top: 40%;
+    margin-top: -40px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3 s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.thumbnail .mask {
+    opacity: 0.85;
+    filter: alpha(opacity=85);
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #181A1C;
+    position: absolute;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2 s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.thumbnail:hover .mask {
+    top: 0;
+}
+.thumbnail {
+    width: 99%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #000;
+    border-radius: 0;
+    box-shadow: none;
+    text-align: center;
+    background: #fff;
+}
+
+/******************************
+******위로 올라오는 div스타일*****
+*******************************/
+.single-project {
+    margin-bottom: 20px;
+    background: #fff;
+    width: 100%;
+}
+.projectimg { /*전체 이미지가 들어갈 div스타일*/
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.single-project img { /*각 이미지 스타일*/
+    width: 45%;
+    display: inline-block;
+    padding: 0;
+    height: 160px;
+}
+.span6 {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 320px;
+    margin-bottom: 30px;
+}
+.row-fluid [class*="span"] { /*span이 포함된 클래스 속성 값이 있는 모든 row-fluid클래스 요소 스타일 지정*/
+    display: block;
+    float: left;
+    width: 100%;
+    min-height: 30px;
+}
+.row-fluid .span6 {
+    width: 48.93617021276595%;
+    *width: 48.88297872340425%;
+    border: 1px solid #000;
+}
+/*설명 스타일*/
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.clearfix:after {/*제목과 세부설명 이어지지않게!*/
+    clear: both;
+}
+.project-description { 
+    padding-right: 20px;
+    padding-left: 30px;
+    padding-top: 10px
+}
+.project-description p {
+    font-size: 17px;
+    margin-top: 10px;
+    font-family: OSeongR;
+}
+.project-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+.project-title h3 {
+    float: left;
+    margin-top: 0;
+    padding: 0;
+    width: 80%;
+}
+/* x(창닫기)이미지 스타일*/
+.close {
+    float: right;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.icon-cancel {
+    width: 32px!important;
+    height: 33px!important;
+    cursor: pointer;
+}
+
+/*전체div*/
+section {
+    display: block;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*썸네일 스타일*/
+.row {
+    text-align: center;
+    margin: 0 auto;
+}
+.span4 {/*각 썸네일 크기*/
+    width: 31.7%;
+    height: 300px;
+    list-style-type: none;
+    display: inline-block;
+}
+h3 {
+    margin: 10px 0;
+    font-family: inherit;
+    font-weight: bold;
+    line-height: 40px;
+    color: inherit;
+    text-rendering: optimizelegibility;
+    font-size: 30px;
+    font-family: yetnalL;
+}
+ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*반응형 스타일*/
+
+/*핸드폰 단말기*/
+/*위로 올라오는 div숨기기, mask숨기기*/
+/*크기에 맞게 글씨, 각 div크기 조정*/
+@media (max-width: 599px) {
+    h3 {
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    .span4 {
+        width: 31%;
+        height: 100px;
+    }
+    .thumbnail {
+        width: 100%;
+        height: 90px;
+    }
+    .thumbnail img {
+        width: 100%;
+        height: 50px;
+        margin: 0;
+    }
+    #slideDiv,
+    .toggleDiv,
+    .row-fluid,
+    #slideDiv1,
+    #slideDiv2,
+    .thumbnail .more,
+    .thumbnail .mask {
+        display: none;
+    }
+    .thumbnails {
+        height: 100px;
+    }
+}
+/*태블릿*/
+@media (min-width:600px) and (max-width:768px) {
+    h3 {
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+    }
+    .span4 {
+        width: 32%;
+        height: 180px;
+    }
+    .thumbnail {
+        width: 100%;
+    }
+    .thumbnail img {
+        width: 100%;
+        height: 130px;
+        margin: 0;
+    }
+    .row-fluid .span6 {
+        width: 48.93617021276595%;
+        *width: 48.88297872340425%;
+    }
+    .span6 {
+        height: 250px;
+    }
+    .project-description {
+        padding: 5px;
+    }
+    .project-description p {
+        font-size: 10px;
+    }
+    .project-title {
+        margin-bottom: 10px;
+    }
+    .single-project img {
+        height: 120px;
+    }
+}
+/*데스크탑*/
+@media (min-width:769px) {
+    body {
+        min-width: 1000px;
+    }
+    .section {
+        margin-top: 30px;
+    }
+}

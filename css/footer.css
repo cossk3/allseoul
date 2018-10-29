@@ -1,0 +1,26 @@
+/*푸터 스타일*/
+/*text 가운데 정렬, 크기 폰트 조정*/
+.footer {
+    text-align: center;
+    height: 150px;
+    margin: 60px auto;
+    border-top: 1px solid #000;
+    padding: 40px 0px 0px;
+    font-size: 12px;
+}
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*반응형 스타일*/
+/*핸드폰단말기*/
+/*크기에 맞게 크기 조정*/
+@media (max-width: 599px) {
+    .footer {
+        margin: 5px;
+        height: 70px;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,36 @@
+/*폰트정의*/
+
+@font-face {
+    font-family:yetnalB;
+    src: url('../font/a옛날목욕탕B.ttf');
+}
+
+@font-face {
+    font-family:yetnalL;
+    src: url('../font/a옛날목욕탕L.ttf');
+}
+
+@font-face {
+    font-family:KoPubB;
+    src: url('../font/KoPub Dotum Bold.ttf');
+}
+
+@font-face {
+    font-family:KoPubL;
+    src: url('../font/KoPub Dotum Light.ttf');
+}
+
+@font-face {
+    font-family:KoPubM;
+    src: url('../font/KoPub Dotum Medium.ttf');
+}
+
+@font-face {
+    font-family:OSeongB;
+    src: url('../font/OSeongandHanEum-Bold.ttf');
+}
+
+@font-face {
+    font-family:OSeongR;
+    src: url('../font/OSeongandHanEum-Regular.ttf');
+}
