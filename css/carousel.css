@@ -1,0 +1,64 @@
+/*carousel 스타일*/
+/*애니메이션 적용*/
+.holder {
+    animation: carousel 25s linear infinite;
+    white-space: nowrap; /*자동줄바꿈하지않는다*/
+}
+
+/*carousel 애니메이션 정의*/
+/*수평으로 움직임*/
+@keyframes carousel {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*반응형 스타일*/
+/*각 크기에 맞게 크기조정*/
+
+/*핸드폰 단말기*/
+@media (max-width: 599px) {
+    .carousel {
+        width: 80%;
+        height: 100px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .holder img {
+        display: inline-block;
+        width: 30%;
+        height: 100px;
+    }
+}
+/*태블릿*/
+@media (min-width:600px) and (max-width:768px) {
+    .carousel {
+        width: 80%;
+        height: 100px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .holder img {
+        display: inline-block;
+        width: 30%;
+        height: 100px;
+    }
+}
+/*데스크탑*/
+@media (min-width:769px) {
+    .holder img {
+        width: 35%;
+        height: 370px;
+    }
+    .carousel {
+        height: 370px;
+        min-width: 1000px;
+        margin-top: 50px;
+    }
+}
