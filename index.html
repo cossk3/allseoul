@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!--BEST코스 하단 레이아웃 스크립트-->
+    <script type="text/javascript" src="js/slidediv.js"></script>
+    <script>
+        $(function(){
+            var pull=$('#pull');
+            menu=$('nav ul');
+            menuHeight=menu.height();
+            
+            /*id pull메뉴 클릭할때마다 슬라이드 !!*/
+   	      $(pull).on('click', function(e){
+              e.preventDefault();
+              menu.slideToggle();
+          });
+            
+            /*창 크기 조정 시 반응형 메뉴 스타일 제거
+            $(window).resize(function(){
+                var w=$(window).width();
+                if(w>720 && menu.is(':hidden'))
+                {menu.removeAttr('style');}
+            });*/
+        });
+    </script>
+    
+    <!--index.html css-->
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+    <!--BEST코스 하단 레이아웃 css-->
+    <link rel="stylesheet" type="text/css" href="css/slidediv.css" />
+    <!--BEST장소 하단 레이아웃 css-->
+    <link rel="stylesheet" type="text/css" href="css/carousel.css" />
+    <!--header,footer,font css-->
+    <link rel="stylesheet" href="./css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/font.css">
+</head>
+
+<body>
+   <!--헤더 시작-->
+    <header>
+        <div class="topmenu">
+            <a href="login.html">로그인</a>&nbsp;&nbsp;|&nbsp;
+            <a href="signup.html">회원가입</a>
+        </div>
+        <div class="logo">
+            <a href="index.html"><img src="./img/logo.png" alt="ALL 서울"></a>
+        </div>
+
+        <nav class="nav_menu">
+            <ul class="nav_menu">
+                <li><a href="menu1.html">지역</a></li>
+                <li><a href="menu2.html">놀거리</a></li>
+                <li><a href="menu3.html">볼거리</a></li>
+                <li><a href="menu4.html">먹거리</a></li>
+                <li><a href="menu5.html">계절</a></li>
+                <li><a href="#">데이트코스</a></li>
+                <li><a href="menu7.html">고객지원</a></li>
+            </ul>
+            <!--반응형 메뉴-->
+            <a id="pull" href="#">Menu</a>
+        </nav>
+    </header>
+    <!--헤더 끝-->
+    
+    
+    <!--BEST장소 동영상 배너 시작-->
+    <div class="img">
+        <video src="./img/video/main_video1.mp4" class="video" controls="controls" autoplay="autoplay" loop="loop" muted="muted"></video>
+        <div class="content">
+            <h2>BEST 장소</h2>
+        </div>
+    </div>
+    <!--BEST장소 동영상 배너 끝-->
+
+
+    <!--auto carousel 시작-->
+    <div class="carousel">
+        <div class="holder">
+            <img src="img/area/property1.png" alt="" />
+            <img src="img/area/property2.png" alt="" />
+            <img src="img/area/property3.png" alt="" />
+            <img src="img/area/property4.png" alt="" />
+            <img src="img/area/property5.png" alt="" />
+            <img src="img/area/property7.png" alt="" />
+            <img src="img/area/property8.png" alt="" />
+            <img src="img/area/property9.png" alt="" />
+        </div>
+    </div>
+    <!--auto carousel 끝-->
+    
+    
+    <!--BEST코스 동영상 배너 시작-->
+    <div class="img">
+        <video src="./img/video/main_video2.mp4" class="video" controls="controls" autoplay="autoplay" loop="loop" muted="muted"></video>
+        <div class="content">
+            <h2>BEST 코스</h2>
+        </div>
+    </div>
+    <!--BEST코스 동영상 배너 끝-->
+
+
+    <!--div를 클릭하면 위에 div가 슬라이드로 나타나는 형식 시작-->
+    <div class="section">
+        <div class="container">
+            <!--1번째 위로 슬라이드 되는 div시작-->
+            <div id="single-project">
+                <div id="slidingDiv" class="toggleDiv row-fluid single-project">
+                    <div class="span6 projectimg">
+                        <img src="img/slidediv/property1_1.JPG" alt="project 1" />
+                        <img src="img/slidediv/property1_2.JPG" alt="project 1" />
+                        <img src="img/slidediv/property1_3.JPG" alt="project 1" />
+                        <img src="img/slidediv/property1_4.JPG" alt="project 1" />
+                    </div>
+                    <div class="span6">
+                        <div class="project-description">
+                            <div class="project-title clearfix">
+                                <h3>을지로 데이트</h3>
+                                <span class="show_hide close">
+                                    <img src="./img/slidediv/cancel_icon.png" class="icon-cancel">
+                                </span>
+                            </div>
+                            <p>#노말에이
+                                <br> 단독 출판물을 보다 쉽게 접할 수 있는! 마치 누군가의 방 안 책장 속으로 들어온 듯한 매력
+                                <br> #투피스
+                                <br> 친구 사이인 두 명의 디자이너가 좋아하는 일을 하며 생업도 해결할 수 있는 방식을 고심하다 탄생했다는 '투피스(two;ffice)'
+                                <br>#신도시
+                                <br> 흔히들 말하는 북유럽 인테리어도 아니고 이태원, 가로수길에 있는 것도 아니고 '신도시' 자체만으로의 매력!</p>
+                        </div>
+                    </div>
+                </div>
+                <!--1번쨰 위로 슬라이드 되는 div끝-->
+                <!--2번째 위로 슬라이드 되는 div시작-->
+                <div id="slidingDiv1" class="toggleDiv row-fluid single-project">
+                    <div class="span6 projectimg">
+                        <img src="img/slidediv/property2_1.JPG" alt="project 2">
+                        <img src="img/slidediv/property2_2.JPG" alt="project 2">
+                        <img src="img/slidediv/property2_3.JPG" alt="project 2">
+                        <img src="img/slidediv/property2_4.JPG" alt="project 2">
+                    </div>
+                    <div class="span6">
+                        <div class="project-description">
+                            <div class="project-title clearfix">
+                                <h3>도산공원 데이트</h3>
+                                <span class="show_hide close">
+                                    <img src="./img/slidediv/cancel_icon.png" class="icon-cancel">
+                                </span>
+                            </div>
+                            <p>#빵집, OUR Bakery
+                                <br> 아낌없이 초코가루를 뿌린 초코 빵 '더티초코' 1인당 2개밖에 못 사는 도산공원 핫플레이스!!
+                                <br>#맛집, 멜팅샵
+                                <br> 메뉴의 시작 점인 원재료의 신선함을 듬뿍 담은 건강한 브런치 맛집!!
+                                <br>#카페, 꼼뽀스텔라
+                                <br>고급스러운 대리석 테이블과 화이트톤의 인테리어부터 여심저격 제대로 하는 핑크핑크 디저트 카페!</p>
+                        </div>
+                    </div>
+                </div>
+                <!--2번째 위로 슬라이드 되는 div끝-->
+                <!--3번째 위로 슬라이드 되는 div시작-->
+                <div id="slidingDiv2" class="toggleDiv row-fluid single-project">
+                    <div class="span6 projectimg">
+                        <img src="img/slidediv/property3_1.JPG" alt="project 3">
+                        <img src="img/slidediv/property3_2.JPG" alt="project 3">
+                        <img src="img/slidediv/property3_3.JPG" alt="project 3">
+                        <img src="img/slidediv/property3_4.JPG" alt="project 3">
+                    </div>
+                    <div class="span6">
+                        <div class="project-description">
+                            <div class="project-title clearfix">
+                                <h3>성북동 데이트</h3>
+                                <span class="show_hide close">
+                                    <img src="./img/slidediv/cancel_icon.png" class="icon-cancel">
+                                </span>
+                            </div>
+                            <p>#맛집, 꿀맛식당
+                                <br>하늘색 타일 위로 접시 한가득 담아낸 함박스테이크 비쥬얼에 침이 꼴깍! 모든 메뉴가 다 식당 이름처럼 "꿀맛"
+                                <br>#카페, 프로젝트얼스
+                                <br>고심한 동네 이미지처럼 얼을 소중히 하는 마음, Earth를 지키고자 하는 마음이 모여 탄생!
+                                <br>#카페, 고미다락
+                                <br>빈티지한 소품들과 곳곳에 푸른 식물들이 반겨주는!! 오전에는 브런치를 오후에는 펍에 온듯 맥주 한 잔으로 하루를 마무리!</p>
+                        </div>
+                    </div>
+                </div>
+                <!--3번째 위로 슬라이드 되는 div끝-->
+                <!--데이트코스 썸네일 시작-->
+                <ul id="slidediv-grid" class="thumbnails row">
+                    <li class="span4 mix web">
+                        <div class="thumbnail">
+                            <img src="img/slidediv/property1_1.JPG" alt="project 1">
+                            <a href="#single-project" class="more show_hide" rel="#slidingDiv">
+                                <img src="img/slidediv/plus_icon.png" alt="">
+                            </a>
+                            <h3>을지로 데이트</h3>
+                            <div class="mask"></div>
+                        </div>
+                    </li>
+                    <li class="span4 mix photo">
+                        <div class="thumbnail">
+                            <img src="img/slidediv/property2_1.JPG" alt="project 2">
+                            <a href="#single-project" class="show_hide more" rel="#slidingDiv1">
+                                <img src="img/slidediv/plus_icon.png" alt="">
+                            </a>
+                            <h3>도산공원 데이트</h3>
+                            <div class="mask"></div>
+                        </div>
+                    </li>
+                    <li class="span4 mix identity">
+                        <div class="thumbnail">
+                            <img src="img/slidediv/property3_1.JPG" alt="project 3">
+                            <a href="#single-project" class="more show_hide" rel="#slidingDiv2">
+                                <img src="img/slidediv/plus_icon.png" alt="">
+                            </a>
+                            <h3>성북동 데이트</h3>
+                            <div class="mask"></div>
+                        </div>
+                    </li>
+                </ul>
+                <!--데이트코스 썸네일 끝-->
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--푸터 시작-->
+    <footer>
+        <div class="footer">
+            <a href="intro.html">회사소개</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">인재채용</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">제휴제안</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">이용약관</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">개인정보처리방침</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="menu7.html">고객센터</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <p>Copyright(C) 2018 All Right Reserved.</p>
+        </div>
+    </footer>
+    <!--푸터 끝-->
+</body>
+
+</html>
