@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            var pull=$('#pull');
+            menu=$('nav ul');
+            menuHeight=menu.height();
+            
+            /*id pull메뉴 클릭할때마다 슬라이드 !!*/
+            $(pull).on('click', function(e){
+                e.preventDefault();
+                menu.slideToggle();
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="./css/login.css" type="text/css" />
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css" type="text/css" />
+</head>
+
+<body>
+    <!--헤더 시작-->
+    <header>
+        <div class="topmenu">
+            <a href="login.html">로그인</a>&nbsp;&nbsp;|&nbsp;
+            <a href="signup.html">회원가입</a>
+        </div>
+        <div class="logo">
+            <a href="index.html"><img src="./img/logoimg.png" alt="ALL 서울" style="width: 100px"></a>
+        </div>
+
+        <nav class="nav_menu">
+            <ul class="nav_menu">
+                <li><a href="menu1.html">지역</a></li>
+                <li><a href="menu2.html">놀거리</a></li>
+                <li><a href="menu3.html">볼거리</a></li>
+                <li><a href="menu4.html">먹거리</a></li>
+                <li><a href="menu5.html">계절</a></li>
+                <li><a href="#">데이트코스</a></li>
+                <li><a href="menu7.html">고객지원</a></li>
+            </ul>
+            <!--반응형 메뉴-->
+            <a id="pull" href="#">Menu</a>
+        </nav>
+    </header>
+    <!--헤더 끝-->
+
+
+    <!--로그인 컨테이너 시작-->
+    <div class="cont">
+        <div class="demo">
+            <!--로그인 전체 폼-->
+            <div class="login">
+                <!--로그인/패스워드 폼-->
+                <div class="login__form">
+                    <!--id 폼-->
+                    <div class="login__row">
+                        <!--아이디 앞 아이콘-->
+                        <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
+                            <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
+                        </svg>
+                        <input type="text" class="login__input name" placeholder="ID" />
+                    </div>
+                    <!--password 폼-->
+                    <div class="login__row">
+                        <!--패스워드 앞 아이콘-->
+                        <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
+                            <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
+                        </svg>
+                        <input type="password" class="login__input pass" placeholder="Password" />
+                    </div>
+                    <!--로그인 버튼-->
+                    <button type="button" class="__submit">Sign in</button>
+                    <p class="login__signup">Don't have an account? &nbsp;<a href="signup.html">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--로그인 컨테이너 끝-->
+
+
+    <!--푸터 시작-->
+    <footer>
+        <div class="footer">
+            <a href="intro.html">회사소개</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">인재채용</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">제휴제안</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">이용약관</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">개인정보처리방침</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="menu7.html">고객센터</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <p>Copyright(C) 2018 All Right Reserved.</p>
+        </div>
+    </footer>
+    <!--푸터 끝-->
+</body>
+</html>
