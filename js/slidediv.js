@@ -39,7 +39,7 @@ jQuery(document).ready(function ($) {
     });
 });
 
-
+/*
 (function($){
 	var methods = {
 		// 초기화!!
@@ -125,4 +125,4 @@ jQuery(document).ready(function ($) {
 		},
 	};
 	
-})(jQuery);
+})(jQuery);*/
