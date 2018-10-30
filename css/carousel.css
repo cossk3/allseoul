@@ -55,10 +55,12 @@
     .holder img {
         width: 35%;
         height: 370px;
+        display: inline-block;
     }
     .carousel {
         height: 370px;
         min-width: 1000px;
         margin-top: 50px;
+        overflow: hidden;
     }
 }
